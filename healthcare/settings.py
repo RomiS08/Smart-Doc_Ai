@@ -58,7 +58,14 @@ WSGI_APPLICATION = 'healthcare.wsgi.application'
 
 # Database
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'healthcare_db',
+        'USER':'root',
+        'PASSWORD':'',
+        'HOST':'127.0.0.1',
+        'PORT':'3306'
+    }
 }
 
 # Password validation
