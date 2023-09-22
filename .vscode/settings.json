@@ -1,5 +1,14 @@
 {
     "spellchecker.ignoreWordsList": [
         "gunicorn"
-    ]
+    ],
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./core",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": true
 }
