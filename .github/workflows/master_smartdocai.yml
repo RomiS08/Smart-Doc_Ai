@@ -3,7 +3,8 @@ name: CI/CD for Smart-Doc_Ai
 on:
   push:
     branches:
-      - master 
+      - master
+  workflow_dispatch:  # Add this line to enable manual triggering
 
 jobs:
   build:
@@ -12,18 +13,5 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.11
-      
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
 
-      
-    - name: Deploy to production (example)
-      if: github.ref == 'refs/heads/master'
-      run: |
-        
+    # Add more steps here
