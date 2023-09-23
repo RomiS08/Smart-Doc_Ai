@@ -8,11 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-<<<<<<< HEAD
-set VIRTUAL_ENV=C:\Users\Romi_\OneDrive\Desktop\ML\Smart-Doc\website\env
-=======
-set VIRTUAL_ENV=C:\Users\Romi_\OneDrive\Desktop\healthcare\env
->>>>>>> cd7aa9c6 (App)
+set VIRTUAL_ENV=E:\My Software Projects\Python ML Projects\Smart_Doc_Ai\env
 
 if not defined PROMPT set PROMPT=$P$G
 
@@ -29,7 +25,6 @@ if defined _OLD_VIRTUAL_PATH set PATH=%_OLD_VIRTUAL_PATH%
 if not defined _OLD_VIRTUAL_PATH set _OLD_VIRTUAL_PATH=%PATH%
 
 set PATH=%VIRTUAL_ENV%\Scripts;%PATH%
-set VIRTUAL_ENV_PROMPT=(env) 
 
 :END
 if defined _OLD_CODEPAGE (
